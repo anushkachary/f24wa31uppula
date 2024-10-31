@@ -1,13 +1,17 @@
+// In your app.js or server.js file
+ 
 const express = require('express');
 const router = express.Router();
+//const app = express();
 const port = 3000;
-
+ 
 // Define a root route
-
-router.get('/computation', (req, res) => {
-    // Generate a random value between -1 and 1
-    let x = (Math.random() * 2 - 1); // Generates a number between -1 and 1
-    // Check for query parameter 'x' and use that value if provideds
+router.get('/', (req, res) => {
+ 
+    // Generate a random value between -1 and 1 (since Math.asin requires this range)
+    let x = Math.random(); // Generates a number between -1 and 1
+   
+    // Check for query parameter 'x' and use that value if provided
     if (req.query.x) {
         x = parseFloat(req.query.x);
     }
@@ -24,6 +28,7 @@ router.get('/computation', (req, res) => {
         Math.sin() applied to ${x} is ${sinValue} <br>
         Math.sinh() applied to ${x} is ${sinhValue}
     `;
+   
     // Send the response
     res.send(response);
 });
