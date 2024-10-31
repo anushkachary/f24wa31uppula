@@ -1,16 +1,23 @@
 {
   "name": "f24wa31uppula",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A server generated with express-generator",
+  "main": "app.js",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
+  "author": "Anushka Uppula",
+  "license": "MIT",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
-  }
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3"
+  },
+  "git": "",
+  "test": "",
+  "devDependencies": {}
 }
